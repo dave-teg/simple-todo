@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", serif;
+  padding: 1rem;
+}
+
+/* utility */
+.margin-left {
+  margin-left: 1rem;
+}
+
+.margin-left-sm {
+  margin-left: 0.5rem;
+}
+
+.none {
+  display: none;
+}
+
+
+
+/* page style */
+
+.header {
+  border: 3px solid #000;
+  border-radius: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.toDoForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.toDoForm input {
+  width: 200px;
+  height: 35px;
+  padding: 0.75rem;
+  border: 2px solid #333;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+.toDoForm input:focus {
+  background-color: lightblue;
+  outline-color: blue;
+}
+
+.errMsg {
+  color: red;
+  margin-bottom: 0.5rem;
+}
+
+
+.btn {
+  align-self: center;
+  width: 100px;
+  padding-block: 0.15rem;
+  cursor: pointer;
+}
+
+[data-clear-list] {
+  margin-top: 0.5rem;
+}
+
+.list {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.list li {
+  font-size: 1.5rem;
+}
+
+.list li span {
+  /* border: 1px solid #333; */
+  display: inline-block;
+  width: 650px;
+}
+
+.list li:not(:first-child) {
+  margin-top: 0.75rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+.listBtn {
+  padding: 0.125rem;
+  font-size: 1.125rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaacae;
+}
+
+@media screen and (max-width: 850px) {
+  .list li span {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .list li span {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .list li span {
+    width: 150px;
+  }
+}
